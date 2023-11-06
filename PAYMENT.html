@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PAYMENT</title>
+    <style>
+        body{
+            background-color: #fdfbfb;
+        }
+        .home-page {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid red;
+            width: 50vh;
+            padding: 10px 20px;
+            background-color: #007BFF; 
+            color: #fff; 
+            text-decoration: none;
+            border: 2px solid #007BFF; 
+            border-radius: 5px; 
+            transition: background-color 0.3s, color 0.3s; 
+        }
+        .home-page:hover {
+            background-color: #0056b3;
+            color: #fff; 
+        }
+    </style>
+</head>
+<body style="font-weight: bolder;">
+    <div class="container">
+    <form action="">
+        <h1 class="heading">Payment form </h1>
+        <p> * This is important</p>
+        <hr>
+        <h2 class="info">Personal Info</h2>
+        <p> Name * <input type="text" name="name" required placeholder="Name"></p>
+        <fieldset>
+            <legend> Gender *</legend>
+        <p>
+            Male <input type="radio" name="gender" id="">
+            Female <input type="radio" name="gender" id="" required>
+        </p>
+    </fieldset>
+    <p> Address * <textarea name="address" id="address" cols="100" rows="8" placeholder="Address Enter here"></textarea> </p>
+    <p class="email"> Email * <input type="email" name="email" id="email" required placeholder="Exp . qamarsgaikh@gmail.com"></p>
+    <p class="number"> Pincode * <input type="number" name="pincode" id="pincode" required placeholder="123456"></p>
+     <h2 class="gateway"> Payment Gateway</h2>
+     <p> Card Info *</p>
+     <select name="card type" id="card type" required>
+         <option value=""> ---Select card type---</option>
+         <option value="visa"> visa</option>
+         <option value="rupay"> Rupay</option>
+         <option value="master card"> Master Card</option>
+     </select>
+     <p>
+         Card Number * <input type="number" name="card number" id="card number" required placeholder="1111 2222 3333">
+     </p>
+     <p class="date"> Exp Date * <input type="date" name="exp date" id="exp date" required placeholder="04/12/2022"></p>
+     <p class="password">
+         CVV * <input type="password" name="cvv" id="cvv" required placeholder="1111 2222 3333 4444">
+     </p>
+     <p class="pp"><input type="submit" value="Paynow" class="paynow"></p>
+    </form>
+    <a href="index.html" class="home-page">Back to home page</a>
+</body>
+</html>
